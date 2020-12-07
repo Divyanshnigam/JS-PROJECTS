@@ -1,0 +1,36 @@
+.machine {
+    background-color: rgb(2, 2, 59);
+    border: dashed rgb(26, 4, 4) 3px;
+    height: 300px;
+    width: 900px;
+    margin: 50px;
+
+    display: flex;
+}
+
+.slot {
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    overflow: hidden;
+
+    background-color: rgba(0, 0, 0, 0.993);
+    border: solid rgb(173, 4, 4) 5px;
+
+    text-align: center;
+    font-size: 80pt;
+    line-height: 250px;
+}
+
+.slot > .value {
+    animation: slotspin infinite 0.5s;
+}
+
+@keyframes slotspin {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(200px);
+    }
+}
