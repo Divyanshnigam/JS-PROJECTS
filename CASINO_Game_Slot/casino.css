@@ -1,10 +1,16 @@
+:root {
+    --speed: 5;
+}
+body{
+    background-color: rgb(188, 209, 0);
+}
 .machine {
     background-color: rgb(2, 2, 59);
     border: dashed rgb(26, 4, 4) 3px;
     height: 300px;
     width: 900px;
     margin: 50px;
-
+    align-content: center;
     display: flex;
 }
 
@@ -15,15 +21,23 @@
     overflow: hidden;
 
     background-color: rgba(0, 0, 0, 0.993);
-    border: solid rgb(173, 4, 4) 5px;
+    border: solid rgb(28, 5, 90) 5px;
 
     text-align: center;
     font-size: 80pt;
     line-height: 250px;
 }
 
+#inpSpeed {
+    font-size: 30pt;
+    margin-left: 30px;
+    width: 50px;
+    
+}
 .slot > .value {
-    animation: slotspin infinite 0.5s;
+    animation-name: slotspin;
+    animation-iteration-count: infinite;
+    animation-duration: calc(1s / var(--speed));
 }
 
 @keyframes slotspin {
