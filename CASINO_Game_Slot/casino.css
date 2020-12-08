@@ -5,7 +5,7 @@ body{
     background-color: rgb(188, 209, 0);
 }
 .machine {
-    background-color: rgb(2, 2, 59);
+    background-color: rgb(5, 5, 90);
     border: dashed rgb(26, 4, 4) 3px;
     height: 300px;
     width: 900px;
@@ -40,6 +40,13 @@ body{
     animation-duration: calc(1s / var(--speed));
 }
 
+#spinbtn {
+    font-size:10pt;
+    background-color: rgb(245, 3, 3);
+    height: 35pt;
+    width: 500pt;
+    margin-left: 30px;
+}
 @keyframes slotspin {
     0% {
         transform: translateY(-200px);

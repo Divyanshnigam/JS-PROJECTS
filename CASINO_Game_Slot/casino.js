@@ -2,10 +2,10 @@ let value1 = document.getElementById('value1')
 let value2 = document.getElementById('value2')
 let value3 = document.getElementById('value3')
 
-let inpSpeed = document.getElementById('inSpeed')
+let inpSpeed = document.getElementById('inpSpeed')
 
 let values = [
-    '🤍' ,'💜' ,'💛' ,'💖' ,'💚' ,'🖤' ,'🧡'
+    '🤍', '💜', '💛', '💖', '💚', '🖤', '🧡'
 ]
 
 function getRandomValue() {
@@ -14,23 +14,23 @@ function getRandomValue() {
 
 
 let animationId;
-function updateAnimation(newSpeed)
-{
-    if(animationId) clearInterval(animation)
+
+function updateAnimation(newSpeed) {
+    if (animationId) clearInterval(animation)
 
     animationId = setInterval(() => {
 
         value1.innerText = getRandomValue()
         value2.innerText = getRandomValue()
         value3.innerText = getRandomValue()
-    
-    },1000 /newSpeed)
+
+    }, 1000 / newSpeed)
 }
 
 inpSpeed.onchange = function(ev) {
 
     //document.documentElement => this is ":root of css"
 
-    document.documentElement.style.setProperty('--speed',ev.target.value)
+    document.documentElement.style.setProperty('--speed', ev.target.value)
     updateAnimation(ev.target.value)
 }
