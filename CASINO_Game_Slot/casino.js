@@ -40,5 +40,5 @@ inpSpeed.onchange = function(ev) {
 }
 
 stopbtn.onclick = function() {
-    updateAnimation.pause();
+
 }
