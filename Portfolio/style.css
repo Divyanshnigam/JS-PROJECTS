@@ -1,0 +1,36 @@
+body {
+    background-color: rgba(0, 0, 0, 0.938);
+    padding: 10px;
+}
+
+.nav-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-radius: 10px;
+    letter-spacing: 5px;
+    padding: 10px;
+    background-color: rgba(1, 0, 5, 0.075);
+}
+
+.home {
+    padding-left: 300px;
+    float: right;
+    color: rgba(247, 250, 244, 0.959);
+}
+
+.name {
+    font-family: Dancing Script;
+    font-size: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: rgba(247, 250, 244, 0.959);
+}
+
+.image {
+    height: 600px;
+    width: 1305px;
+}
