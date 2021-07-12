@@ -11,14 +11,16 @@ body {
     z-index: 100;
     border-radius: 10px;
     letter-spacing: 5px;
-    padding: 10px;
     background-color: rgba(1, 0, 5, 0.075);
 }
 
 .home {
+    display: grid;
     padding-left: 300px;
     float: right;
     color: rgba(247, 250, 244, 0.959);
+    word-spacing: 20px;
+    background-color: rgba(17, 17, 19, 0.26);
 }
 
 .name {
@@ -32,5 +34,54 @@ body {
 
 .image {
     height: 600px;
-    width: 1305px;
+    width: 100%;
+}
+
+.bug {
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+.top-right {
+    font-family: Yomogi;
+    width: 40%;
+    height: 502px;
+    font-size: 30px;
+    color: rgb(228, 217, 217);
+    background-color: rgba(3, 8, 8, 0.719);
+    position: absolute;
+    top: 700px;
+    right: 16px;
+    text-align: center;
+    overflow: auto;
+    /* to hide scrollbar without removing scrolling*/
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    overflow-y: scroll;
+}
+
+.top-right::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+.contact-section {
+    background-color: rgba(3, 3, 3, 0.945);
+    border-radius: 20px;
+}
+
+.contact {
+    text-align: center;
+    font-size: 60px;
+    color: rgb(245, 243, 243);
+}
+
+.socialmedia {
+    color: rgb(223, 181, 13);
+    text-align: center;
+    word-spacing: 10px;
+    padding: 10px;
 }
