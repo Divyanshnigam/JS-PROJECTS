@@ -71,7 +71,7 @@ body {
 
 .read-container {
     display: flex;
-    background-color: rgba(228, 225, 238, 0.527);
+    background-color: rgba(86, 94, 78, 0.986);
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
