@@ -71,7 +71,6 @@ body {
 
 .read-container {
     display: flex;
-    background-color: rgba(86, 94, 78, 0.986);
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
@@ -84,10 +83,10 @@ body {
 }
 
 .head {
-    background-color: black;
+    background-color: rgba(5, 3, 99, 0.294);
     color: white;
     text-align: center;
-    padding: 5px;
+    padding: 1px;
     font-family: monospace;
     font-size: 20px;
 }
@@ -110,12 +109,15 @@ body {
     padding: 5px;
     font-family: cursive;
     font-size: 20px;
-    border-radius: 20px;
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
 }
 
 .image1 {
-    height: 400px;
+    height: 300px;
     width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 #it1 {
