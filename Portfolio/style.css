@@ -4,6 +4,11 @@ body {
     margin: 0px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 .nav-flex {
     display: flex;
     flex-wrap: nowrap;
@@ -37,9 +42,13 @@ body {
     width: 100%;
 }
 
-.bug {
+.div2 {
     position: relative;
-    height: 500px;
+    height: 30rem;
+}
+
+.bug {
+    height: 100%;
     width: 100%;
     margin: 0 auto;
 }
@@ -47,12 +56,12 @@ body {
 .top-right {
     font-family: Yomogi;
     width: 40%;
-    height: 502px;
+    height: 100%;
     font-size: 30px;
     color: rgb(228, 217, 217);
     background-color: rgba(3, 8, 8, 0.719);
     position: absolute;
-    top: 660px;
+    top: 0;
     right: 0px;
     text-align: center;
     overflow: auto;
